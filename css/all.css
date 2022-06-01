@@ -1,0 +1,867 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*以上為css reset*/
+
+*,*:before,*:after{
+	-webkit-box-sizing:border-box ;
+	        box-sizing:border-box ;
+}
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+sub{
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+h2,.h2{
+    font-size: 48px;
+}
+h3,.h3{
+    font-size: 32px;
+}
+h4,.h4{
+    font-size: 24px;
+}
+h5,.h5{
+    font-size: 18px;
+}
+.fz-20{
+    font-size: 20px;
+}
+.fw-b{
+    font-weight: bold;
+}
+.ta-center{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+}
+.box-shadow{
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.color-56C4C5{
+    color: #56C4C5;
+}
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+@media(max-width:767px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.topBtn a{
+    position: fixed;
+    z-index: 10;
+    right: 48px;
+    bottom: 48px;
+    display: inline;
+    color: #fff;
+    background: #56C4C5;
+    border-radius: 50%;
+    padding: 23px 20px;
+}
+@media (max-width:768px){
+    .topBtn a{
+        right: 24px;
+        bottom: 24px;
+    }
+}
+@media (max-width:767px){
+    .topBtn a{
+        right: 16px;
+        bottom: 16px;
+    }
+}
+.header{
+    height: 100vh;
+    position: relative;
+}
+.header .nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    margin-bottom: 30px;
+}
+.header .nav h1 a{
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/logo.png');
+    background-size: 100%;
+    width: 218px;
+    height: 40px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.header .nav-planBtn{
+    color: #fff;
+    padding: 8px 32px;
+    background: #FF5D50;
+    border-radius: 22px;
+}
+.header .nav-planBtn:hover{
+    background: #56C4C5;
+}
+.header hr{
+    display: none;
+}
+@media(max-width:768px){
+    .header{
+        height: auto;
+        margin-bottom: 60px;
+    }
+}
+@media(max-width:767px){
+    .header .nav{
+        padding: 16px 0;
+        margin-bottom: 0px;
+    }
+    .header .nav h1 a{
+        width: 130px;
+        height: 24px;
+    }
+    .header hr{
+        display: block;
+        border: 2px solid #FFD153;
+        margin: 0 -20px 32px -20px;
+    }
+}
+.headerBanner{
+    justify-content: space-between;
+    align-items: center;
+}
+.headerBannerTitle h3{
+    font-size: 18px;
+    color: #56C4C5;
+    margin-bottom: 8px;
+}
+.headerBannerTitle h2{
+    margin-bottom: 16px;
+}
+.headerBannerTitle p{
+    font-size: 20px;
+}
+.headerBanner-Img{
+    width: 532px;
+}
+.header-bgYellow{
+    position: absolute;
+    width: 850px;
+    height: 100%;
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg')no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.header-bgBall{
+    position: absolute;
+    width: 138px;
+    height: 360px;
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg')no-repeat right;
+    bottom: -180px;
+    left: 0;
+    z-index: -1;
+}
+@media(max-width:768px){
+    .headerBanner-Img{
+        width: 264px;
+    }
+    .header-bgYellow{
+        width: 426px;
+    }
+    .header-bgBall{
+        width: 49px;
+        height: 126px;
+        background-size: 126px;
+        bottom: -180px;
+    }
+}
+@media(max-width:767px){
+    .headerBanner{
+        flex-direction: column;
+    }
+    .headerBannerTitle{
+        margin-bottom: 32px;
+    }
+    .headerBannerTitle h3{
+        font-size: 16px;
+    }
+    .headerBannerTitle h2{
+        font-size: 32px;
+    }
+    .headerBannerTitle p{
+        font-size: 16px;
+    }
+    .headerBanner-Img{
+        width: 304px;
+        margin-bottom: 32px;
+    }
+    .header-bgYellow{
+        width: 100%;
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg')no-repeat center top;
+        top: 394px;
+    }
+    .header-bgBall{
+        bottom: -200px;
+    }
+}
+.social h3{
+    margin-bottom: 48px;
+}
+.socialList{
+    justify-content: space-between;
+}
+.socialCard{
+    flex-direction: column;
+    align-items: center;
+    width: 33.3333%;
+}
+.socialCard img{
+    width: 90px;
+    margin-bottom: 24px;
+}
+.socialCard h4{
+    margin-bottom: 24px;
+}
+.socialCard p{
+    color: #747474;
+    text-align: center;
+}
+@media(max-width:768px){
+    .social{
+        margin-bottom: 60px;
+    }
+    .socialCard h4{
+        font-size: 20px;
+    }
+}
+@media(max-width:767px){
+    .social h3{
+        margin-bottom: 32px;
+    }
+    .socialList{
+        flex-direction: column;
+    }
+    .socialCard{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .socialCard img{
+        width: 60px;
+        margin-bottom: 16px;
+    }
+    .socialCard h4{
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+}
+.person{
+    position: relative;
+}
+.person h3{
+    margin-bottom: 16px;
+}
+.person .fz-20{
+    margin-bottom: 48px;
+}
+.personList{
+    justify-content: space-between;
+}
+.personCard{
+    width: 24%;
+    background: #fff;
+}
+.personCard img{
+    border-radius: 12px 12px 0 0;
+}
+.personCardText{   
+    padding: 16px 16px 24px 16px;
+}
+.personCard h4{
+    font-size: 16px;
+    color: #56C4C5;
+    margin-bottom: 16px;
+}
+.person-bgBall{
+    position: absolute;
+    width: 210px;
+    height: 310px;
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg')no-repeat;
+    background-size: 310px;
+    right: 0;
+    bottom: -200px;
+    z-index: -1;
+}
+@media(max-width:768px){
+    .person{
+        margin-bottom: 60px;
+    }
+    .personCardText{   
+        padding: 16px 8px 24px 8px;
+    }
+    .person-bgBall{
+        width: 88px;
+        height: 135px;
+        background-size: 135px;
+        right: 0;
+        bottom: -80px;
+        z-index: -1;
+    }
+}
+@media(max-width:767px){
+    .person .fz-20{
+        margin-bottom: 32px;
+    }
+    .personList{
+        flex-direction: column;
+        align-items: center;
+    }
+    .personCard{
+        width: 78%;
+        margin-bottom: 24px;
+    }
+}
+
+.introduce .container{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.introduceTitle{
+    width: 48%;
+    padding-left: 90px;
+}
+.introduceTitle h3{
+    margin-bottom: 16px;
+}
+.introduceTitle p{
+    margin-bottom: 36px;
+}
+.planBtn{
+    display: inline;
+    font-size: 18px;
+    color: #fff;
+    background: #56C4C5;
+    padding: 12px 32px;
+    border-radius: 27px;
+}
+.planBtn:hover{
+    opacity: 0.8;
+}
+.introduceList{
+    width: 52%;
+    flex-wrap: wrap;
+}
+.introduceCard{
+    width: 41%;
+    margin-right: 47px;
+    margin-bottom: 28px;
+    padding: 32px;
+}
+.introduceCard h4{
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.introduceCardIcon{
+    justify-content: center;
+    align-items: center;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+@media(max-width:768px){
+    .introduce{
+        margin-bottom: 60px;
+    }
+    .introduceTitle{
+        padding-left: 32px;
+    }
+    .introduceCard{
+        width: 44%;
+        margin-right: 20px;
+        margin-bottom: 28px;
+        padding: 16px;
+    }
+}
+@media(max-width:767px){
+    .introduce .container{
+        flex-direction: row;
+        flex-direction: column;
+    }
+    .introduceTitle{
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .introduceTitle h3{
+        font-size: 28px;
+        text-align: center;
+    }
+    .introduceTitle p{
+        margin-bottom: 28px;
+        text-align: center;
+    }
+    .introduceList{
+        width: 100%;
+        margin-top: 32px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .introduceCard{
+        width: 70%;
+        margin-right: 0;
+        margin-bottom: 24px;
+        padding: 32px 24px 48px 24px;
+    }
+}
+.comment{
+    position: relative;
+}
+.comment h3{
+    margin-bottom: 48px;
+}
+.commentCard .commentCardContent{
+    position: relative;
+    margin: 56px 3px 3px 3px;
+    padding: 48px 29px 24px 29px;
+    background: #fff;
+}
+.commentCard .commentCardContent img{
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -56px;
+    left: 32px;
+}
+
+.commentCard .commentCardContent hr{
+    border-top: 1px solid #DDDDDD;
+    margin: 24px 0;
+}
+.commentCardTitle{
+    justify-content: space-between;
+    align-items: center;
+}
+.commentCardTitle .startIcon{
+    color: #F5CA52;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    width: 16px ;
+    height: 10px ;
+    background: #FFD153;
+}
+.comment-bgBall{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg')no-repeat;
+    background-size: 150px;
+    left: 50px;
+    top: 48px;
+}
+@media(max-width:768px){
+    .commentCardTitle .startIcon{
+        font-size: 12px;
+    }
+    .comment-bgBall{
+        left: -70px;
+        top: 48px;
+    }
+}
+@media(max-width:767px){
+    .comment h3{
+        margin-bottom: 32px;
+    }
+    .commentCardTitle .startIcon{
+        font-size: 16px;
+    }
+    .comment-bgBall{
+        width: 77px;
+        height: 153px;
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg')no-repeat right;
+        background-size: 153px;
+        left: 0px;
+        top: 40px;
+    }
+}
+.footer{
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg')no-repeat center top;
+    background-size: contain;
+}
+.footer .container{
+    flex-direction: column;
+    align-items: center;
+}
+.footer h3{
+    margin-top: 360px;
+    margin-bottom: 48px;
+}
+.footer p{
+    background: #F5F5F5;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 100px;
+}
+@media(max-width:768px){
+    .footer h3{
+        margin-top: 140px;
+    }
+    .footer p{
+        margin-top: 60px;
+    }
+}
+@media(max-width:767px){
+    .footer{
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/footer_sm.svg')no-repeat center top;
+        background-size: contain;
+    }
+    .footer h3{
+        font-size: 24px;
+        margin-bottom: 24px;
+        margin-top: 293px;
+    }
+}
+
+/*plan css start*/
+.planHeader{
+    height: 470px;
+}
+.planBannerTitle{
+    margin-top: 62px;
+}
+.planBannerTitle h2{
+    margin-bottom: 16px;
+}
+.planBanner-Img{
+    width: 885px;
+    height: 559px;
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg')no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.plan-bgGray{
+    position: absolute;
+    height: 470px;
+    background: #F7F9FD;
+    border-radius: 0px 0px 0px 300px;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.choicePlan{
+    position: relative;
+}
+.choicePlan h3{
+    margin-bottom: 48px;
+}
+.choiceNum{
+    justify-content: center;
+    margin-bottom: 54px;
+}
+.choiceNumCard{
+    margin: 0 8px;
+}
+.choiceNumCard a{
+    color: #56C4C5;
+    padding: 12px 32px;
+    text-align: center;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+}
+.choiceNumCard a:hover,.choiceNumCard .active{
+    background: #56C4C5;
+    color: #fff;
+}
+@media(max-width:768px){
+    .planBannerTitle {
+        margin-left: 48px;
+    }
+    .planBanner-Img{
+        width: 550px;
+        height: 100%;
+        background-size: 100%;
+    }
+    .plan-bgGray{
+        height: 400px;
+        border-radius: 0px 0px 0px 240px;
+    }
+}
+@media(max-width:767px){
+    .planBannerTitle{
+        margin-top: 16px;
+        margin-left: 0;
+    }
+    .planBanner-Img{
+        width: 100%;
+        height: 600px;
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg')no-repeat;
+        background-size: contain;
+        top: 76px;
+        right: 0;
+    }
+    .plan-bgGray{
+        height: 495px;
+        border-radius: 0px 0px 0px 180px;
+        top: 76px;
+    }
+    .choicePlan{
+        margin-top: 200px;
+        margin-bottom: 60px;
+    }
+    .choiceNum{
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+    .choiceNumCard a{
+        white-space: nowrap;
+    }
+}
+.planList{
+    justify-content: center;
+}
+.planCard{
+    width: 40%;
+    background: #fff;
+    margin: 0 10px;
+    padding: 10px 26px 32px 26px;
+}
+.planCard h4{
+    text-align: center;
+    margin-bottom: 16px;
+}
+.planCard hr{
+    border-top: 1px solid #DDDDDD;
+    margin: 0 -26px 32px -26px;
+}
+.planCard p{
+    text-align: center;
+    margin-bottom: 32px;
+}
+.planCard a{
+    width: 136px;
+    font-size: 18px;
+    background: #56C4C5;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 27px;
+    margin: 32px auto 0 auto;
+}
+.planCard a:hover{
+    opacity: 0.8;
+}
+.numBox{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.numBox-item{
+    width: 169px;
+    background: #F5F5F5;
+    border-radius: 12px;
+    padding: 24px 16px;
+}
+.numBox-item p{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.numBox-item span{
+    display: block;
+    text-align: center;
+}
+.numBox-item .planNum{
+    font-size: 32px;
+    color: #56C4C5;
+}
+.numBox .equarl{
+    font-size: 29px;
+    margin: 0 21px;
+}
+.numBox-item .planPrice,.numBox-item .planPrice-pro{
+    font-size: 32px;
+}
+.infoCard{
+    width: 100%;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 0;
+}
+.infoCard img{
+    margin-right: 12px;
+}
+.choicePlan-ball{
+    position: absolute;
+    width: 94px;
+    height: 361px;
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg')no-repeat right;
+    background-size: 361px;
+    top: 300px;
+    left: 0;
+    z-index: -1;
+}
+
+@media(max-width:768px){
+    .planCard{
+        width: 48%;
+        padding: 16px 16px 24px 16px;
+    }
+    .planCard hr{
+        margin: 0 -16px 32px -16px;
+    }
+    .choiceNumCard a{
+        white-space: nowrap;
+    }
+    .numBox-item{
+        width: 139px;
+        padding: 16px 8px;
+    }
+    .numBox-item .planNum{
+        font-size: 28px;
+    }
+    .numBox .equarl{
+        font-size: 24px;
+        margin: 0 6px;
+    }
+    .numBox-item .planPrice,.numBox-item .planPrice-pro{
+        font-size: 28px;
+    }
+    .infoCard{
+        font-size: 14px;
+    }
+    .infoCard img{
+        margin-right: 6px;
+    }
+}
+@media(max-width:767px){
+    .choiceNum{
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+    .planList{
+        flex-direction: column;
+    }
+    .planCard{
+        width: 100%;
+        margin: 24px 0;
+    }
+    .planCard hr{
+        border-top: 1px solid #DDDDDD;
+        margin: 0 -16px;
+        margin-bottom: 32px;
+    }
+    .choicePlan-ball{
+        position: absolute;
+        width: 96px;
+        height: 204px;
+        background-size: 204px;
+        top: 750px;
+    }
+}
+.fqa .container{
+    max-width: 916px;
+}
+.fqa h3{
+    font-size: 32px;
+    margin-bottom: 48px;
+}
+.fqaCard{
+    padding: 16px 32px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.fqaTitle{
+    justify-content: space-between;
+}
+.fqaTitle h4{
+    font-size: 18px;
+}
+.fqaList li p{
+    display: none;
+    color: #747474;
+    margin-top: 24px;
+}
+.hide-img{
+    display: none;
+}
+.color-56C4C5-b{
+    color: #56C4C5;
+    font-weight: bold;
+}
