@@ -853,7 +853,7 @@ h5,.h5{
 .fqaTitle h4{
     font-size: 18px;
 }
-.fqaList li p{
+.fqaCard p{
     display: none;
     color: #747474;
     margin-top: 24px;
@@ -864,4 +864,9 @@ h5,.h5{
 .color-56C4C5-b{
     color: #56C4C5;
     font-weight: bold;
+}
+@media(max-width:767px){
+    .fqaTitle h4{
+        font-size: 16px;
+    }
 }
