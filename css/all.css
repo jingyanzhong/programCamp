@@ -558,6 +558,8 @@ h5,.h5{
     margin: 56px 3px 3px 3px;
     padding: 48px 29px 24px 29px;
     background: #fff;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .commentCard .commentCardContent img{
     width: 80px;
@@ -597,6 +599,12 @@ h5,.h5{
     top: 48px;
 }
 @media(max-width:768px){
+    .commentCard .commentCardContent{
+        height: 310px;
+    }
+    .commentCard .commentCardContent hr{
+        margin-top: auto;
+    }
     .commentCardTitle .startIcon{
         font-size: 12px;
     }
@@ -608,6 +616,12 @@ h5,.h5{
 @media(max-width:767px){
     .comment h3{
         margin-bottom: 32px;
+    }
+    .commentCard .commentCardContent{
+        height: auto;
+    }
+    .commentCard .commentCardContent hr{
+        margin-top: 24px;
     }
     .commentCardTitle .startIcon{
         font-size: 16px;
